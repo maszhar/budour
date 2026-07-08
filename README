@@ -8,6 +8,24 @@ Since the changes are highly specific to my own workflow, I chose to develop the
 
 Budour is developed primarily for my personal use. While anyone is free to use, study, modify, and redistribute it under the terms of the GNU General Public License (GPL), there is no goal of building a community-driven project or replacing Ardour. The project respects Ardour's copyright notices and GPL licensing while gradually developing its own identity.
 
+## Project Plan
+
+| Task |  Description | Status |
+| - | - | - |
+| Codebase Refactoring | Introduce dependency injection (IoC), separate business logic from the UI, adopt a ViewModel architecture, improve logging, and reduce crashes through comprehensive exception handling. | 🚧 In Progress |
+| GTK 4 UI             | Recreate the user interface with a responsive, dynamic layout using GTK 4.                                                                                  | ⏳ Planned      |
+| Branding             | Create an original visual identity for Budour, including a new logo, application icon, and other branding assets.                                                                        | ⏳ Planned      |
+| Android App          | Develop an Android version of Budour.                                                                                                                                                    | ⏳ Planned      |
+
+### Status Legend
+
+* ⏳ **Planned** — The work is planned but has not started yet.
+* 🚧 **In Progress** — The work is actively being developed.
+* ⏸️ **Paused** — Development is temporarily on hold.
+* ✅ **Completed** — The work has been finished and is available.
+* ❌ **Cancelled** — The work has been permanently cancelled and will not be pursued.
+
+
 
 ## Special Thanks
 
