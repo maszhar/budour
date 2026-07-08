@@ -4,8 +4,8 @@ This document lists all use cases grouped by functional scope.
 
 ---
 
-## 01 Project Management
+## 01 Session Management
 
 | ID | Use Case | Description | Details |
 |-|-|-|-|
-| 01-03 | Save Project | Save the current project. | - [Requirements](requirements/01-03.md) <br> - [Workflow](workflow/01-03.md) |
+| 01-03 | Save Session | Save the current session. | - [Requirements](requirements/01-03.md) <br> - [Workflow](workflow/01-03.md) |
