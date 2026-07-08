@@ -13,9 +13,9 @@ Budour is developed primarily for my personal use. While anyone is free to use, 
 | Task |  Description | Status |
 | - | - | - |
 | Codebase Refactoring | Introduce dependency injection (IoC), separate business logic from the UI, adopt a ViewModel architecture, improve logging, and reduce crashes through comprehensive exception handling. | 🚧 In Progress |
-| GTK 4 UI             | Recreate the user interface with a responsive, dynamic layout using GTK 4.                                                                                  | ⏳ Planned      |
-| Branding             | Create an original visual identity for Budour, including a new logo, application icon, and other branding assets.                                                                        | ⏳ Planned      |
-| Android App          | Develop an Android version of Budour.                                                                                                                                                    | ⏳ Planned      |
+| GTK 4 UI | Recreate the user interface with a responsive, dynamic layout using GTK 4. | ⏳ Planned |
+| Branding | Create an original visual identity for Budour, including a new logo, application icon, and other branding assets. | ⏳ Planned |
+| Android App | Develop an Android version of Budour. | ⏳ Planned |
 
 ### Status Legend
 
@@ -24,8 +24,6 @@ Budour is developed primarily for my personal use. While anyone is free to use, 
 * ⏸️ **Paused** — Development is temporarily on hold.
 * ✅ **Completed** — The work has been finished and is available.
 * ❌ **Cancelled** — The work has been permanently cancelled and will not be pursued.
-
-
 
 ## Special Thanks
 
