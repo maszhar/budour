@@ -1,5 +1,9 @@
-Please see the Ardour website at https://ardour.org/ for all documentation.
+# Budour
 
-For information on building Ardour:
+A Digital Audio Workstation (DAW) based on the Ardour 9.7 codebase.
 
-https://ardour.org/development.html
+It started as a personal fork to address issues I encountered while using Ardour, particularly frequent crashes on Arch Linux running kernel `6.6.10-arch1-1` and a user interface that exceeded the dimensions of my `1080p` display
+
+Since the changes are highly specific to my own workflow, I chose to develop them in a separate project, allowing me to iterate quickly without depending on project's reviews process or release schedules.
+
+Budour is developed primarily for my personal use. While anyone is free to use, study, modify, and redistribute it under the terms of the GNU General Public License (GPL), there is no goal of building a community-driven project or replacing Ardour. The project respects Ardour's copyright notices and GPL licensing while gradually developing its own identity.
