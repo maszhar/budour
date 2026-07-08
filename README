@@ -7,3 +7,17 @@ It started as a personal fork to address issues I encountered while using Ardour
 Since the changes are highly specific to my own workflow, I chose to develop them in a separate project, allowing me to iterate quickly without depending on project's reviews process or release schedules.
 
 Budour is developed primarily for my personal use. While anyone is free to use, study, modify, and redistribute it under the terms of the GNU General Public License (GPL), there is no goal of building a community-driven project or replacing Ardour. The project respects Ardour's copyright notices and GPL licensing while gradually developing its own identity.
+
+
+## Special Thanks
+
+Budour would not exist without the incredible work of the Ardour project and its contributors.
+
+Special thanks to:
+
+* **Paul Davis** — Creator and lead developer of Ardour.
+* **Robin Gareus** — Lead developer and long-time maintainer.
+
+I would also like to thank everyone who has contributed to Ardour over the years, including developers, designers, translators, testers, documentation writers, financial supporters, and the broader community.
+
+For the complete list of contributors and acknowledgements, please visit [Ardour Credits](https://ardour.org/credits?utm_source=chatgpt.com).
