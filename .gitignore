@@ -31,8 +31,8 @@ depcomp
 *.swp
 *.kdev4
 .gdb_history
-core
-core.*
+/core
+/core.*
 vgcore.*
 .vscode
 cscope.files
