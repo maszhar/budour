@@ -86,6 +86,7 @@
 #include "transport_control_ui.h"
 #include "visibility_group.h"
 #include "window_manager.h"
+#include "session/core/application/session_controller.h"
 
 #ifdef COMPILER_MSVC
 #include "about.h"
@@ -872,5 +873,7 @@ private:
 	bool _loading_session;
 
 	PBD::ScopedConnectionList clock_state_connection;
+
+	MYAPP::SessionController *_session_controller;
 };
 

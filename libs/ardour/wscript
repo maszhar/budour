@@ -284,7 +284,11 @@ libardour_sources = [
         'video_tools_paths.cc',
         'vumeterdsp.cc',
         'worker.cc',
-        'zeroconf.cc'
+        'zeroconf.cc',
+        '../di/di_container.cc',
+        '../session/core/application/session_controller.cc',
+        '../session/infrastructure/persistence/session_file_storage.cc',
+        '../session/infrastructure/ports/persistence/session_repository.cc'
 ]
 
 def options(opt):

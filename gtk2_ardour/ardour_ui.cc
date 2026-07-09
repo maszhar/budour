@@ -109,6 +109,7 @@
 #include "ardour/utils.h"
 
 #include "LuaBridge/LuaBridge.h"
+#include "di/di_container.h"
 
 #ifdef PLATFORM_WINDOWS
 #include "pbd/windows_mmcss.h"
@@ -349,6 +350,7 @@ ARDOUR_UI::ARDOUR_UI (int *argcp, char **argvp[], const char* localedir)
 	, trigger_page_visibility_button (S_("Window|Cue"))
 	, nsm_first_session_opened (false)
 	, _loading_session (false)
+	, _session_controller (MYAPP::DIContainer::resolve<MYAPP::SessionController>())
 {
 	Gtkmm2ext::init (localedir);
 
@@ -2261,7 +2263,7 @@ ARDOUR_UI::save_state_canfail (string name, bool switch_to_it)
 	if (_session) {
 		int ret;
 
-		if ((ret = _session->save_state (name, false, switch_to_it)) != 0) {
+		if ((ret = _session_controller->save (_session, name, switch_to_it)) != 0) {
 			return ret;
 		}
 

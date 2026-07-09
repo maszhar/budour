@@ -69,6 +69,8 @@
 
 #include "pbd/i18n.h"
 
+#include "di/di_container.h"
+
 #ifdef PLATFORM_WINDOWS
 #include <windows.h>  // CreateMutex
 #include <fcntl.h> // Needed for '_fmode'
@@ -248,6 +250,8 @@ int nomain (int argc, char *argv[])
 int main (int argc, char *argv[])
 #endif
 {
+	MYAPP::DIContainer::initialize();
+
 	console_madness_begin();
 
 	ARDOUR::check_for_old_configuration_files();
