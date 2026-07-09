@@ -13,14 +13,10 @@
      id="defs1" />
   <g
      id="layer1">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round"
+    <path
        id="rect3"
-       width="1083.7334"
-       height="571.5"
-       x="0"
-       y="0"
-       rx="8.4145956" />
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:1.5;stroke-linecap:round"
+       d="M 8.4145956,0 H 1075.3188 c 4.6617,0 8.4146,3.7529096 8.4146,8.4145956 V 563.0854 c 0,4.66169 -3.7529,8.4146 -8.4146,8.4146 H 8.4145956 C 3.7529096,571.5 0,567.74709 0,563.0854 V 8.4145956 C 0,3.7529096 3.7529096,0 8.4145956,0 Z" />
     <g
        id="g13">
       <path
@@ -60,14 +56,10 @@
         <g
            id="g8-5"
            transform="matrix(1.0099347,0,0,1.0099433,178.91473,-60.64428)">
-          <rect
-             style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+          <path
              id="rect1-2"
-             width="65.645836"
-             height="15.375"
-             x="508.37592"
-             y="223.77608"
-             rx="0" />
+             style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
+             d="m 508.37592,223.77608 h 65.64583 v 15.375 h -65.64583 z" />
           <text
              xml:space="preserve"
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
@@ -82,14 +74,10 @@
         <g
            id="g21"
            transform="matrix(1.0099347,0,0,1.0099433,283.46669,-88.838311)">
-          <rect
-             style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+          <path
              id="rect21"
-             width="65.645836"
-             height="15.375"
-             x="508.37592"
-             y="223.77608"
-             rx="0" />
+             style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
+             d="m 508.37592,223.77608 h 65.64583 v 15.375 h -65.64583 z" />
           <text
              xml:space="preserve"
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
@@ -123,14 +111,10 @@
       <g
          id="g14-0"
          transform="translate(-205.07652,-45.688519)">
-        <rect
-           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+        <path
            id="rect13-6"
-           width="65.645836"
-           height="15.375"
-           x="508.37592"
-           y="223.77608"
-           rx="0" />
+           style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
+           d="m 508.37592,223.77608 h 65.64583 v 15.375 h -65.64583 z" />
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
@@ -179,14 +163,10 @@
         <g
            id="g8"
            transform="translate(0.66782658,-14.523707)">
-          <rect
-             style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+          <path
              id="rect1"
-             width="65.645836"
-             height="15.375"
-             x="508.37592"
-             y="223.77608"
-             rx="0" />
+             style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
+             d="m 508.37592,223.77608 h 65.64583 v 15.375 h -65.64583 z" />
           <text
              xml:space="preserve"
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
@@ -219,14 +199,10 @@
         <g
            id="g14"
            transform="translate(0.66781643,123.09669)">
-          <rect
-             style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+          <path
              id="rect13"
-             width="65.645836"
-             height="15.375"
-             x="508.37592"
-             y="223.77608"
-             rx="0" />
+             style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
+             d="m 508.37592,223.77608 h 65.64583 v 15.375 h -65.64583 z" />
           <text
              xml:space="preserve"
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
