@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="4096"
+   height="2160"
+   viewBox="0 0 1083.7333 571.5"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round"
+       id="rect3"
+       width="1083.7334"
+       height="571.5"
+       x="0"
+       y="0"
+       rx="8.4145956" />
+    <g
+       id="g13">
+      <path
+         id="path4"
+         style="fill:#fff6f5;fill-opacity:1;fill-rule:evenodd;stroke:#f87e71;stroke-width:0.134904;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 110.61934 24.59517 C 110.5657 24.59517 110.52251 24.638334 110.52251 24.691938 L 110.52251 62.934694 C 110.52251 62.988298 110.5657 63.031462 110.61934 63.031462 L 134.74081 63.031462 L 145.83644 43.813316 L 134.74085 24.59517 L 110.61934 24.59517 z "
+         transform="matrix(14.820867,0,0,14.829743,-1090.1313,-363.99022)" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:12.3472px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito Bold';text-align:start;letter-spacing:0.132292px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#de1e09;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         x="556.7915"
+         y="17.276901"
+         id="text7"><tspan
+           id="tspan7"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.3472px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#de1e09;fill-opacity:1;stroke:none;stroke-width:0.5"
+           x="556.7915"
+           y="17.276901">INFRASTRUCTURE</tspan></text>
+      <g
+         id="g20"
+         transform="matrix(0.99016305,0,0,0.99015456,5.3303196,2.813332)"
+         style="stroke-width:1.00994">
+        <path
+           id="path21"
+           style="fill:#691f2f;fill-opacity:1;fill-rule:evenodd;stroke:#d56983;stroke-width:0.134904;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           d="M 110.52251 26.32021 L 110.52251 32.652581 L 116.56209 32.652581 L 123.00934 43.813316 L 116.56209 54.97405 L 110.52251 54.97405 L 110.52251 61.306422 L 120.21696 61.306422 L 130.31904 43.813316 L 120.21696 26.32021 L 110.52251 26.32021 z "
+           transform="matrix(14.968108,0,0,14.9772,-1106.3447,-370.4508)" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:12.4699px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito Bold';text-align:start;letter-spacing:0.133607px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.504968;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           x="556.2597"
+           y="38.704014"
+           id="text7-5"><tspan
+             id="tspan7-6"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4699px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.504969"
+             x="556.2597"
+             y="38.704014">PORTS</tspan></text>
+        <g
+           id="g8-5"
+           transform="matrix(1.0099347,0,0,1.0099433,178.91473,-60.64428)">
+          <rect
+             style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1-2"
+             width="65.645836"
+             height="15.375"
+             x="508.37592"
+             y="223.77608"
+             rx="0" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             x="541.28351"
+             y="233.51534"
+             id="text8-5"><tspan
+               id="tspan8-4"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+               x="541.28351"
+               y="233.51534">SessionRepository</tspan></text>
+        </g>
+        <g
+           id="g21"
+           transform="matrix(1.0099347,0,0,1.0099433,283.46669,-88.838311)">
+          <rect
+             style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             id="rect21"
+             width="65.645836"
+             height="15.375"
+             x="508.37592"
+             y="223.77608"
+             rx="0" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             x="541.28351"
+             y="233.51534"
+             id="text21"><tspan
+               id="tspan21"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+               x="541.28351"
+               y="233.51534">SessionFileStorage</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g12">
+      <path
+         id="path5"
+         style="fill:#f7fff5;fill-opacity:1;fill-rule:evenodd;stroke:#91f977;stroke-width:0.134904;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         d="M 85.488942 24.59517 L 74.393315 43.813316 L 85.488942 63.031462 L 109.61042 63.031462 C 109.66405 63.031462 109.70724 62.988298 109.70724 62.934694 L 109.70724 24.691938 C 109.70724 24.638334 109.66405 24.59517 109.61042 24.59517 L 85.488942 24.59517 z "
+         transform="matrix(14.820867,0,0,14.829743,-1090.1313,-363.99022)" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:12.3472px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito Bold';text-align:end;letter-spacing:0.132292px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#34de09;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         x="561.77045"
+         y="17.276901"
+         id="text6"><tspan
+           id="tspan6"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.3472px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#34de09;fill-opacity:1;stroke:none;stroke-width:0.5"
+           x="528.54413"
+           y="17.276901">INTERFACE</tspan></text>
+      <g
+         id="g14-0"
+         transform="translate(-205.07652,-45.688519)">
+        <rect
+           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           id="rect13-6"
+           width="65.645836"
+           height="15.375"
+           x="508.37592"
+           y="223.77608"
+           rx="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           x="541.28351"
+           y="233.51534"
+           id="text13-1"><tspan
+             id="tspan13-5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+             x="541.28351"
+             y="233.51534">ARDOUR_UI</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g11">
+      <path
+         style="fill:#e6f8fe;fill-opacity:1;fill-rule:evenodd;stroke:#77d8f9;stroke-width:0.392212;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         id="path1"
+         d="m 127.97566,74.74909 -35.721555,-10e-7 -17.860775,-30.935774 17.860778,-30.935773 35.721552,2e-6 17.86078,30.935774 z"
+         transform="matrix(5.0992744,0,0,5.0992744,-19.639348,62.333873)" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:12.3472px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito Bold';text-align:end;letter-spacing:0.132292px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#09a7de;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         x="573.97906"
+         y="145.58632"
+         id="text2"><tspan
+           id="tspan2"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.3472px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#09a7de;fill-opacity:1;stroke:none;stroke-width:0.5"
+           x="558.32019"
+           y="145.58632">CORE</tspan></text>
+      <g
+         id="g9">
+        <path
+           id="rect2"
+           style="fill:#ecfefe;fill-opacity:1;fill-rule:evenodd;stroke:#5ff8f5;stroke-width:1.49999998;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           d="m 465.59741,153.67152 -73.06892,126.5367 H 691.20483 L 618.1359,153.67152 Z" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:8.81944px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito Bold';text-align:end;letter-spacing:0.132292px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#09dede;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           x="580.16504"
+           y="165.60039"
+           id="text3"><tspan
+             id="tspan3"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.81944px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#09dede;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="561.4458"
+             y="165.60039">DOMAIN</tspan></text>
+        <g
+           id="g8"
+           transform="translate(0.66782658,-14.523707)">
+          <rect
+             style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             id="rect1"
+             width="65.645836"
+             height="15.375"
+             x="508.37592"
+             y="223.77608"
+             rx="0" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             x="541.28351"
+             y="233.51534"
+             id="text8"><tspan
+               id="tspan8"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+               x="541.28351"
+               y="233.51534">Session</tspan></text>
+        </g>
+      </g>
+      <g
+         id="g10">
+        <path
+           id="path2"
+           style="fill:#fcf5ff;fill-opacity:1;fill-rule:evenodd;stroke:#e5aefb;stroke-width:0.35130183;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           d="M 75.142801 45.111323 L 92.254116 74.749065 L 127.97565 74.749065 L 145.08696 45.111323 L 75.142801 45.111323 z "
+           transform="matrix(4.2702111,0,0,4.269454,71.652865,98.691059)" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:8.81944px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito Bold';text-align:end;letter-spacing:0.132292px;writing-mode:lr-tb;direction:ltr;text-anchor:end;fill:#d57bfa;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           x="602.35474"
+           y="304.79489"
+           id="text4"><tspan
+             id="tspan4"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.81944px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#d57bfa;fill-opacity:1;stroke:none;stroke-width:0.5"
+             x="572.54065"
+             y="304.79489">APPLICATION</tspan></text>
+        <g
+           id="g14"
+           transform="translate(0.66781643,123.09669)">
+          <rect
+             style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             id="rect13"
+             width="65.645836"
+             height="15.375"
+             x="508.37592"
+             y="223.77608"
+             rx="0" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             x="541.28351"
+             y="233.51534"
+             id="text13"><tspan
+               id="tspan13"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+               x="541.28351"
+               y="233.51534">SessionController</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
