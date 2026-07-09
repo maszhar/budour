@@ -35,23 +35,61 @@
            x="556.7915"
            y="17.276901">INFRASTRUCTURE</tspan></text>
       <g
+         id="g21"
+         transform="translate(286.00857,-85.150326)"
+         style="stroke-width:1.00994">
+        <path
+           id="rect21"
+           style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.499998;stroke-linecap:round"
+           d="m 503.36408,223.77608 h 75.66948 v 15.375 h -75.66948 z" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           x="541.19879"
+           y="233.29802"
+           id="text21"><tspan
+             id="tspan21"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+             x="541.19879"
+             y="233.29802">SessionFileStorage</tspan></text>
+      </g>
+      <g
+         id="g5"
+         transform="translate(317.13466,-53.760462)"
+         style="stroke-width:1.00994">
+        <path
+           id="path3"
+           style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
+           d="m 498.35549,223.77608 h 85.6867 v 15.375 h -85.6867 z" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           x="541.07184"
+           y="234.10942"
+           id="text5"><tspan
+             id="tspan5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+             x="541.07184"
+             y="234.10942">SessionXmlConverter</tspan></text>
+      </g>
+      <g
          id="g20"
          transform="matrix(0.99016305,0,0,0.99015456,5.3303196,2.813332)"
          style="stroke-width:1.00994">
         <path
            id="path21"
            style="fill:#691f2f;fill-opacity:1;fill-rule:evenodd;stroke:#d56983;stroke-width:0.134904;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
-           d="M 110.52251 26.32021 L 110.52251 32.652581 L 116.56209 32.652581 L 123.00934 43.813316 L 116.56209 54.97405 L 110.52251 54.97405 L 110.52251 61.306422 L 120.21696 61.306422 L 130.31904 43.813316 L 120.21696 26.32021 L 110.52251 26.32021 z "
+           d="m 110.87955,26.32021 v 6.332371 h 5.68254 l 6.44725,11.160735 -6.44725,11.160734 h -5.68254 v 6.332372 h 9.33741 L 130.31904,43.813316 120.21696,26.32021 Z"
            transform="matrix(14.968108,0,0,14.9772,-1106.3447,-370.4508)" />
         <text
            xml:space="preserve"
            style="font-weight:bold;font-size:12.4699px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:'Nunito Bold';text-align:start;letter-spacing:0.133607px;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.504968;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
-           x="556.2597"
+           x="561.60382"
            y="38.704014"
            id="text7-5"><tspan
              id="tspan7-6"
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.4699px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.504969"
-             x="556.2597"
+             x="561.60382"
              y="38.704014">PORTS</tspan></text>
         <g
            id="g8-5"
@@ -59,35 +97,17 @@
           <path
              id="rect1-2"
              style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
-             d="m 508.37592,223.77608 h 65.64583 v 15.375 h -65.64583 z" />
+             d="m 505.47435,223.77608 h 71.449 v 15.375 h -71.449 z" />
           <text
              xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
-             x="541.28351"
-             y="233.51534"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             x="541.01892"
+             y="233.21689"
              id="text8-5"><tspan
                id="tspan8-4"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
-               x="541.28351"
-               y="233.51534">SessionRepository</tspan></text>
-        </g>
-        <g
-           id="g21"
-           transform="matrix(1.0099347,0,0,1.0099433,283.46669,-88.838311)">
-          <path
-             id="rect21"
-             style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.499999;stroke-linecap:round"
-             d="m 508.37592,223.77608 h 65.64583 v 15.375 h -65.64583 z" />
-          <text
-             xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
-             x="541.28351"
-             y="233.51534"
-             id="text21"><tspan
-               id="tspan21"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
-               x="541.28351"
-               y="233.51534">SessionFileStorage</tspan></text>
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+               x="541.01892"
+               y="233.21689">SessionRepository</tspan></text>
         </g>
       </g>
     </g>
@@ -117,14 +137,14 @@
            d="m 508.37592,223.77608 h 65.64583 v 15.375 h -65.64583 z" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
-           x="541.28351"
-           y="233.51534"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+           x="541.34344"
+           y="233.47794"
            id="text13-1"><tspan
              id="tspan13-5"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
-             x="541.28351"
-             y="233.51534">ARDOUR_UI</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+             x="541.34344"
+             y="233.47794">ARDOUR_UI</tspan></text>
       </g>
     </g>
     <g
@@ -169,14 +189,14 @@
              d="m 508.37592,223.77608 h 65.64583 v 15.375 h -65.64583 z" />
           <text
              xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
-             x="541.28351"
-             y="233.51534"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             x="541.30469"
+             y="234.02827"
              id="text8"><tspan
                id="tspan8"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
-               x="541.28351"
-               y="233.51534">Session</tspan></text>
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+               x="541.30469"
+               y="234.02827">Session</tspan></text>
         </g>
       </g>
       <g
@@ -205,14 +225,14 @@
              d="m 508.37592,223.77608 h 65.64583 v 15.375 h -65.64583 z" />
           <text
              xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
-             x="541.28351"
-             y="233.51534"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+             x="541.07184"
+             y="234.10942"
              id="text13"><tspan
                id="tspan13"
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
-               x="541.28351"
-               y="233.51534">SessionController</tspan></text>
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:sans-serif;-inkscape-font-specification:sans-serif;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.5"
+               x="541.07184"
+               y="234.10942">SessionController</tspan></text>
         </g>
       </g>
     </g>
