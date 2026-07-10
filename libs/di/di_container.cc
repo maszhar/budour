@@ -20,6 +20,7 @@
 #include "session/infrastructure/ports/persistence/session_repository.h"
 #include "session/infrastructure/persistence/session_file_storage.h"
 #include "session/core/application/session_controller.h"
+#include "session/infrastructure/persistence/session_xml_converter.h"
 
 namespace MYAPP
 {
@@ -39,6 +40,12 @@ namespace MYAPP
         {
           return std::make_shared<SessionController>(
               resolve<SessionRepository>());
+        });
+
+    register_<SessionXmlConverter>(
+        []
+        {
+          return std::make_shared<SessionXmlConverter>();
         });
   }
 }

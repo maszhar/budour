@@ -97,6 +97,8 @@
 #include "ardour/transport_api.h"
 #include "ardour/triggerbox.h"
 
+#include "session/infrastructure/persistence/session_xml_converter.h"
+
 class XMLTree;
 class XMLNode;
 struct _AEffect;
@@ -1461,6 +1463,7 @@ private:
 
 	typedef void (Session::*process_function_type)(pframes_t);
 
+	MYAPP::SessionXmlConverter *_session_xml_converter;
 	AudioEngine&            _engine;
 	process_function_type    process_function;
 	process_function_type    last_process_function;

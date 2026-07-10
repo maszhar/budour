@@ -287,7 +287,9 @@ libardour_sources = [
         'zeroconf.cc',
         '../di/di_container.cc',
         '../session/core/application/session_controller.cc',
+        '../session/core/domain/session.cc',
         '../session/infrastructure/persistence/session_file_storage.cc',
+        '../session/infrastructure/persistence/session_xml_converter.cc',
         '../session/infrastructure/ports/persistence/session_repository.cc'
 ]
 
@@ -404,7 +406,7 @@ def build(bld):
         obj.cflags       = [ bld.env['compiler_flags_dict']['pic'] ]
         obj.defines      = []
 
-    obj.export_includes = ['.']
+    obj.export_includes = ['.', '..']
     obj.includes     = ['.', '../vst3/', '../ctrl-interface/control_protocol', '..']
     obj.name         = 'libardour'
     obj.target       = 'ardour'

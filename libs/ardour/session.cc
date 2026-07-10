@@ -150,6 +150,8 @@
 
 #include "pbd/i18n.h"
 
+#include "di/di_container.h"
+
 namespace ARDOUR {
 class MidiSource;
 class Processor;
@@ -359,6 +361,7 @@ Session::Session (AudioEngine &eng,
 	, _active_cue (-1)
 	, tb_with_filled_slots (0)
 	, _global_quantization (Config->get_default_quantization())
+	, _session_xml_converter(MYAPP::DIContainer::resolve<MYAPP::SessionXmlConverter>())
 {
 	_suspend_save.store (0);
 	_playback_load.store (0);

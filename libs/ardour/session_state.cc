@@ -153,6 +153,8 @@
 #include "pbd/i18n.h"
 #include <locale.h>
 
+#include "session/core/domain/session.h"
+
 using namespace std;
 using namespace ARDOUR;
 using namespace PBD;
@@ -1588,7 +1590,10 @@ XMLNode&
 Session::state (bool save_template, snapshot_t snapshot_type, bool for_archive, bool only_used_assets) const
 {
 	LocaleGuard lg;
-	XMLNode* node = new XMLNode("Session");
+
+	MYAPP::Session myapp_session{_name};
+
+	XMLNode* node = _session_xml_converter->session_to_xml(myapp_session);
 	XMLNode* child;
 
 	PBD::Unwinder<bool> uw (Automatable::skip_saving_automation, save_template);
@@ -1606,7 +1611,6 @@ Session::state (bool save_template, snapshot_t snapshot_type, bool for_archive, 
 	if (!save_template) {
 
 		node->set_property ("uuid", _uuid.to_s());
-		node->set_property ("name", _name);
 		node->set_property ("sample-rate", _base_sample_rate);
 
 		if (!_engine_state) {
