@@ -45,6 +45,7 @@ tags
 waf3-*
 .lock-waf*
 /build/
+/build_cmake
 /.cache
 /doc/html/
 /doc/latex/

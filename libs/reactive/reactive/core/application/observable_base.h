@@ -1,5 +1,4 @@
 /*
- * Copyright (C) 2023 Paul Davis <paul@linuxaudiosystems.com>
  * Copyright (C) 2026 Fikri Mustofa <fikrimustofa024@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -18,14 +17,15 @@
  */
 
 #pragma once
-
-#include "../types/editing_scope.h"
+#include <cstddef>
 
 namespace MYAPP
 {
-  class PianorollViewModel
+  class ObservableBase
   {
-  private:
-    EditingScope _editing_scope;
+  public:
+    using SubscriptionId = std::size_t;
+    virtual ~ObservableBase() = default;
+    virtual void unsubscribe(SubscriptionId id) = 0;
   };
 }

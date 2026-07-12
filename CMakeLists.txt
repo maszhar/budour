@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.22)
+
+project(
+  Budour
+  VERSION 1.1.0
+  DESCRIPTION "Digital Audio Workstation"
+  LANGUAGES C CXX
+)
+
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+option(BUDOUR_BUILD_TESTS "Build tests" OFF)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
+if(BUDOUR_BUILD_TESTS)
+  enable_testing()
+endif()
+
+add_subdirectory(libs)
+add_subdirectory(gtk_gui)

@@ -1,5 +1,4 @@
 /*
- * Copyright (C) 2023 Paul Davis <paul@linuxaudiosystems.com>
  * Copyright (C) 2026 Fikri Mustofa <fikrimustofa024@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -17,4 +16,11 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include "pianoroll_viewmodel.h"
+#pragma once
+
+namespace MYAPP
+{
+  struct ObservableState
+  {
+  };
+}
