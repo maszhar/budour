@@ -76,6 +76,7 @@ namespace MYAPP
       }
       else
       {
+        observer.callback(_value);
         _observers.push_back(std::move(observer));
       }
 
@@ -133,6 +134,11 @@ namespace MYAPP
 
     void process_pending_subscribes()
     {
+      for (const auto &pending_observer : _pending_observers)
+      {
+        pending_observer.callback(_value);
+      }
+
       _observers.insert(
           _observers.end(),
           std::make_move_iterator(_pending_observers.begin()),
