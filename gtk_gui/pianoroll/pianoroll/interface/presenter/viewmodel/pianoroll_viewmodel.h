@@ -17,12 +17,23 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include "pianoroll_viewmodel.h"
+#pragma once
+
+#include "pianoroll/core/domain/editing_scope.h"
+#include "reactive/core/application/gtk_observable.h"
 
 namespace MYAPP
 {
-  void PianorollViewModel::set_editing_scope(EditingScope editing_scope)
+  class PianorollViewModel
   {
-    _editing_scope.set(editing_scope);
-  }
+  private:
+    GtkObservable<EditingScope> _editing_scope;
+
+  public:
+    PianorollViewModel();
+
+    void set_editing_scope(EditingScope editing_scope);
+    GtkObservable<EditingScope> &get_editing_scope_observable();
+    const EditingScope &get_editing_scope() const;
+  };
 }

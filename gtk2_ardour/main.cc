@@ -70,6 +70,7 @@
 #include "pbd/i18n.h"
 
 #include "di/di_container.h"
+#include "reactive/core/application/gtk_dispatcher.h"
 
 #ifdef PLATFORM_WINDOWS
 #include <windows.h>  // CreateMutex
@@ -251,6 +252,7 @@ int main (int argc, char *argv[])
 #endif
 {
 	MYAPP::DIContainer::initialize();
+	MYAPP::GtkDispatcher::instance().initialize();
 
 	console_madness_begin();
 

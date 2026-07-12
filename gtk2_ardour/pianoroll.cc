@@ -85,7 +85,6 @@ std::map<std::string,std::string> Pianoroll::controller_name_map;
 Pianoroll::Pianoroll (std::string const & name, bool with_transport, bool expandabl, bool singl_region)
 	: CueEditor (name, with_transport)
 	, prh (nullptr)
-	, _editing_policy (ActiveView)
 	, _color_mode (UIConfiguration::instance().get_default_midi_note_color_mode())
 	, size_button (ArdourButton::default_elements, true)
 	, automation_button (_("A"))
@@ -118,9 +117,9 @@ Pianoroll::Pianoroll (std::string const & name, bool with_transport, bool expand
 
 	using namespace Gtk::Menu_Helpers;
 
-	policy_dropdown.add_menu_elem (MenuElem (_("All Regions"), sigc::bind (sigc::mem_fun (*this, &Pianoroll::set_editing_policy), AllViews)));
-	policy_dropdown.add_menu_elem (MenuElem (_("Active Region"), sigc::bind (sigc::mem_fun (*this, &Pianoroll::set_editing_policy), ActiveView)));
-	set_editing_policy (ActiveView);
+	policy_dropdown.add_menu_elem (MenuElem (_("All Regions"), sigc::bind (sigc::mem_fun (*this, &Pianoroll::set_editing_scope), MYAPP::EditingScope::AllViews)));
+	policy_dropdown.add_menu_elem (MenuElem (_("Active Region"), sigc::bind (sigc::mem_fun (*this, &Pianoroll::set_editing_scope), MYAPP::EditingScope::ActiveView)));
+	set_editing_scope (MYAPP::EditingScope::ActiveView);
 
 	/* Ordering must match enum declaration order */
 	colors_dropdown.add_menu_elem (MenuElem (_("Velocity"), sigc::bind (sigc::mem_fun (*this, &Pianoroll::set_color_mode), ARDOUR::MeterColors)));
@@ -151,6 +150,8 @@ Pianoroll::Pianoroll (std::string const & name, bool with_transport, bool expand
 	set_mouse_mode (Editing::MouseContent, true);
 
 	UIConfiguration::instance().ParameterChanged.connect (sigc::mem_fun (*this, &Pianoroll::parameter_changed));
+
+	subscribe_editing_scope();
 }
 
 Pianoroll::~Pianoroll ()
@@ -255,28 +256,40 @@ Pianoroll::update_pitch_colors ()
 }
 
 void
-Pianoroll::set_editing_policy (EditingPolicy ep)
+Pianoroll::set_editing_scope (MYAPP::EditingScope editing_scope)
 {
-	_editing_policy = ep;
-	std::string txt;
-	switch (_editing_policy) {
-	case AllViews:
-		txt = _("All Regions");
-		break;
-	case ActiveView:
-		txt = _("Active Region");
-		break;
-	}
+	_view_model.set_editing_scope(editing_scope);
+}
 
-	policy_dropdown.set_text (txt);
+void
+Pianoroll::subscribe_editing_scope()
+{
+	_editing_scope_subscription = _view_model.get_editing_scope_observable().subscribe(
+		[this](const MYAPP::EditingScope &editing_scope)
+		{
+			std::string txt;
+			switch (editing_scope) {
+			case MYAPP::EditingScope::AllViews:
+				txt = _("All Regions");
+				break;
+			case MYAPP::EditingScope::ActiveView:
+				txt = _("Active Region");
+				break;
+			}
 
-	set_sensitivities ();
+			policy_dropdown.set_text (txt);
+
+			set_sensitivities ();
+		}
+	);
 }
 
 void
 Pianoroll::set_sensitivities ()
 {
-	if (_editing_policy == ActiveView) {
+	const MYAPP::EditingScope &editing_scope = _view_model.get_editing_scope();
+
+	if (editing_scope == MYAPP::EditingScope::ActiveView) {
 		for (auto & [region,view] : region_view_map) {
 			bool is_active = (view == _active_view);
 			view->set_sensitive (is_active);
@@ -658,7 +671,9 @@ Pianoroll::replace_chord (std::vector<int> intervals)
 void
 Pianoroll::invert_selected_chord (bool up)
 {
-	if (_editing_policy == ActiveView) {
+	const MYAPP::EditingScope &editing_scope = _view_model.get_editing_scope();
+
+	if (editing_scope == MYAPP::EditingScope::ActiveView) {
 
 		if (!_active_view) {
 			return;
@@ -666,7 +681,7 @@ Pianoroll::invert_selected_chord (bool up)
 
 		_active_view->invert_selected_chord (up);
 
-	} else if (_editing_policy == AllViews) {
+	} else if (editing_scope == MYAPP::EditingScope::AllViews) {
 
 		for (auto & [region,view] : region_view_map) {
 			view->invert_selected_chord (up);
@@ -677,7 +692,9 @@ Pianoroll::invert_selected_chord (bool up)
 void
 Pianoroll::drop_selected_chord (std::vector<int> which_notes)
 {
-	if (_editing_policy == ActiveView) {
+	const MYAPP::EditingScope &editing_scope = _view_model.get_editing_scope();
+
+	if (editing_scope == MYAPP::EditingScope::ActiveView) {
 
 		if (!_active_view) {
 			return;
@@ -685,7 +702,7 @@ Pianoroll::drop_selected_chord (std::vector<int> which_notes)
 
 		_active_view->drop_selected_chord (which_notes);
 
-	} else if (_editing_policy == AllViews) {
+	} else if (editing_scope == MYAPP::EditingScope::AllViews) {
 
 		for (auto & [region,view] : region_view_map) {
 			view->drop_selected_chord (which_notes);
@@ -1536,7 +1553,9 @@ Pianoroll::midi_action (void (MidiView::*method)())
 {
 	EC_LOCAL_TEMPO_SCOPE;
 
-	if (_editing_policy == ActiveView) {
+	const MYAPP::EditingScope &editing_scope = _view_model.get_editing_scope();
+
+	if (editing_scope == MYAPP::EditingScope::ActiveView) {
 
 		if (!_active_view) {
 			return;
@@ -1544,7 +1563,7 @@ Pianoroll::midi_action (void (MidiView::*method)())
 
 		(_active_view->*method) ();
 
-	} else if (_editing_policy == AllViews) {
+	} else if (editing_scope == MYAPP::EditingScope::AllViews) {
 
 		for (auto & [region,view] : region_view_map) {
 			(view->*method) ();
@@ -2250,11 +2269,13 @@ Pianoroll::clear_automation_lane (Evoral::Parameter const & param)
 		return;
 	}
 
-	if (_editing_policy == ActiveView) {
+	const MYAPP::EditingScope &editing_scope = _view_model.get_editing_scope();
+
+	if (editing_scope == MYAPP::EditingScope::ActiveView) {
 
 		_active_view->clear_automation_lane (param);
 
-	} else if (_editing_policy == AllViews) {
+	} else if (editing_scope == MYAPP::EditingScope::AllViews) {
 
 		for (auto & [region,view] : region_view_map) {
 			view->clear_automation_lane (param);
@@ -2450,7 +2471,9 @@ Pianoroll::select_all_within (Temporal::timepos_t const & start, Temporal::timep
 {
 	EC_LOCAL_TEMPO_SCOPE;
 
-	if (_editing_policy == ActiveView && !_active_view) {
+	const MYAPP::EditingScope &editing_scope = _view_model.get_editing_scope();
+
+	if (editing_scope == MYAPP::EditingScope::ActiveView && !_active_view) {
 		return;
 	}
 
@@ -2507,11 +2530,11 @@ Pianoroll::select_all_within (Temporal::timepos_t const & start, Temporal::timep
 
 	}
 
-	if (_editing_policy == ActiveView) {
+	if (editing_scope == MYAPP::EditingScope::ActiveView) {
 
 		_active_view->get_selectables (param, start, end, botfrac, topfrac, found);
 
-	} else if (_editing_policy == AllViews) {
+	} else if (editing_scope == MYAPP::EditingScope::AllViews) {
 
 		for (auto & [region,view] : region_view_map) {
 			view->get_selectables (param, start, end, botfrac, topfrac, found);
@@ -2519,11 +2542,11 @@ Pianoroll::select_all_within (Temporal::timepos_t const & start, Temporal::timep
 	}
 
 	if (found.empty()) {
-		if (_editing_policy == ActiveView) {
+		if (editing_scope == MYAPP::EditingScope::ActiveView) {
 			_active_view->clear_selection ();
 		}
 
-	} else if (_editing_policy == AllViews) {
+	} else if (editing_scope == MYAPP::EditingScope::AllViews) {
 
 		for (auto & [region,view] : region_view_map) {
 			view->clear_selection ();
@@ -2994,13 +3017,15 @@ Pianoroll::midiviews_from_region_selection (RegionSelection const &) const
 {
 	MidiViews mv;
 
-	if (_editing_policy == ActiveView) {
+	const MYAPP::EditingScope &editing_scope = _view_model.get_editing_scope();
+
+	if (editing_scope == MYAPP::EditingScope::ActiveView) {
 
 		if (_active_view) {
 			mv.push_back (_active_view);
 		}
 
-	} else if (_editing_policy == AllViews) {
+	} else if (editing_scope == MYAPP::EditingScope::AllViews) {
 
 		for (auto & [region,view] : region_view_map) {
 			mv.push_back (view);

@@ -372,7 +372,9 @@ gtk2_ardour_sources = [
         'velocity_ghost_region.cc',
         'video_server_dialog.cc',
         'utils_videotl.cc',
-        'export_video_dialog.cc'
+        'export_video_dialog.cc',
+    '../gtk_gui/pianoroll/pianoroll/interface/presenter/viewmodel/pianoroll_viewmodel.cc',
+    '../gtk_gui/reactive/reactive/core/application/gtk_dispatcher.cc'
 ]
 
 def enoify (major, minor):
@@ -647,7 +649,7 @@ def build(bld):
     # operate on copy to avoid adding sources twice
     obj.source    = list(gtk2_ardour_sources)
     obj.target    = 'ardour-' + bld.env['VERSION']
-    obj.includes  = ['.']
+    obj.includes  = ['.', '../gtk_gui/pianoroll', '../gtk_gui/reactive', '../libs/reactive']
 
     if bld.is_defined('WINDOWS_VST_SUPPORT'):
         obj.includes += [ '../libs/fst' ]

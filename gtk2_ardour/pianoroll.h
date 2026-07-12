@@ -31,6 +31,8 @@
 #include "cue_editor.h"
 #include "slipdraggable.h"
 
+#include "pianoroll/interface/presenter/viewmodel/pianoroll_viewmodel.h"
+
 namespace Gtk {
 	class Widget;
 	class HScrollbar;
@@ -81,11 +83,7 @@ struct ControllerControls : public Gtk::HBox {
 class Pianoroll : public CueEditor, public SlipDraggable
 {
   public:
-	enum EditingPolicy {
-		AllViews,
-		ActiveView,
-	};
-
+	MYAPP::PianorollViewModel _view_model{};
 
 	Pianoroll (std::string const & name, bool with_transport_controls = false, bool expandable = false, bool single_region = false);
 	~Pianoroll ();
@@ -94,8 +92,7 @@ class Pianoroll : public CueEditor, public SlipDraggable
 
 	samplecnt_t current_page_samples() const;
 
-	void set_editing_policy (EditingPolicy);
-	EditingPolicy editing_policy() const { return _editing_policy; }
+	void set_editing_scope (MYAPP::EditingScope);
 
 	void get_per_region_note_selection (std::list<std::pair<PBD::ID, std::set<std::shared_ptr<Evoral::Note<Temporal::Beats> > > > >&) const {}
 
@@ -242,8 +239,9 @@ class Pianoroll : public CueEditor, public SlipDraggable
 	ArdourCanvas::Rectangle* tempo_bar;
 	ArdourCanvas::Rectangle* meter_bar;
 	ArdourCanvas::PianoRollHeader* prh;
-	EditingPolicy _editing_policy;
 	ARDOUR::ColorMode _color_mode;
+
+	MYAPP::Subscription _editing_scope_subscription;
 
 	ArdourWidgets::ArdourButton size_button;
 	ArdourWidgets::ArdourButton automation_button;
@@ -279,6 +277,8 @@ class Pianoroll : public CueEditor, public SlipDraggable
 	void build_cc_menu (ArdourWidgets::MetaButton*);
 
 	bool canvas_enter_leave (GdkEventCrossing* ev);
+
+	void subscribe_editing_scope();
 
 	class BBTMetric : public ArdourCanvas::Ruler::Metric
 	{

@@ -1,5 +1,5 @@
 set(GTK_GUI_PIANOROLL_SOURCES
-  "pianoroll/viewmodel/pianoroll_viewmodel.cc"
+  "pianoroll/interface/presenter/viewmodel/pianoroll_viewmodel.cc"
 )
 
 add_library(

@@ -21,7 +21,7 @@
 
 namespace MYAPP
 {
-  enum EditingScope
+  enum class EditingScope
   {
     AllViews = 1,
     ActiveView = 2,
